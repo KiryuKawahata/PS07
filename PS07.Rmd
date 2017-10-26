@@ -44,7 +44,6 @@ Please indicate who you collaborated with on this assignment:
 
 ```{r}
 
-
 #Visual analysis
 
 kable(cor(train[c(4, 6, 7)], train$SeriousDlqin2yrs), title="Correlation with Count")
@@ -66,7 +65,7 @@ ggplot(data = train, aes(x = DebtRatio))+ geom_histogram() + theme(legend.positi
 
 ```
 
-Having the greatest absolute correlation value, as well as being the most influential in stepwise regression, age appears to be the "strongest" predictor. In addition the distribution for age appears to be the most "normal" of the three. When looking at Monthly Income there seems to be a trend, however there seems to be a significantly lower representation of higher income levels in this training set. Only 792 of the sample earn over 30000 a month. I'm not confident that filtering the training set will create accurate predictions for all incomes, so I've chosen age to be the sole predictor here. 
+Having the greatest absolute correlation value, as well as being the most influential in stepwise regression, age appears to be the "strongest" predictor. In addition the distribution for age appears to be the most "normal" of the three. When looking at Monthly Income there seems to be a trend, however there is significantly lower representation of higher income levels in this training set. Only 792 of the train sample earn over 30000 a month. I'm not confident that filtering the training set will create accurate predictions for all incomes, so I've chosen age to be the sole predictor here. 
 
 
 # Build binary classifier
